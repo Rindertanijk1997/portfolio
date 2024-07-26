@@ -1,0 +1,90 @@
+
+.skills {
+    background: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(0, 0, 0) 60%);
+    height: 100vh; 
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr; 
+    gap: 20px;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  
+  .skills_h1 {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+    align-self: center; 
+    font-size: 2.5rem;
+    
+  }
+  
+  .skills_left {
+    max-width: 400px;
+    font-size: .9rem;
+    justify-self: center;
+    margin-bottom: 50px;
+   font-family: 'Bona Nova', serif;
+   font-weight: 600;
+   
+   
+   
+  }
+
+  .skill-icon {
+    width: 20px; /* Storleken på den yttre cirkeln */
+    height: 20px; /* Storleken på den yttre cirkeln */
+    background-color: #0b25e9; /* Ljusblå bakgrund */
+    border-radius: 50%; /* Gör det till en cirkel */
+    position: relative; /* För att positionera den inre cirkeln */
+    margin-right: 10px; /* Avstånd till texten */
+  }
+  
+  .skill-icon-inner {
+    width: 10px; /* Storleken på den inre cirkeln */
+    height: 10px; /* Storleken på den inre cirkeln */
+    background-color: #037e07; /* Grön färg */
+    border-radius: 50%; /* Gör det till en cirkel */
+    position: absolute; /* Absolut positionering inuti den yttre cirkeln */
+    top: 50%; /* Centrerar vertikalt */
+    left: 50%; /* Centrerar horisontellt */
+    transform: translate(-50%, -50%); /* Fint justerar positionen till centrum */
+  }
+
+
+
+  
+  .skills_right {
+    max-width: 400px;
+    font-size: .9rem;
+    justify-self: center;
+    margin-bottom: 50px;
+   font-family: 'Bona Nova', serif;
+   color: rgb(255, 255, 255);
+  }
+
+
+  li {
+    display: flex; /* Aktiverar flexbox */
+    align-items: center; /* Centrerar items vertikalt */
+    gap: 1.5rem; /* Lägger till 1 rem mellanrum mellan texten och baren */
+    margin-bottom: 3rem; /* Lägger till 1 rem mellanrum till nästa rad */
+    font-size: 1.2rem;
+  }
+  
+  .skill-bar {
+    background-color: #0b25e9; /* Ljusblå bakgrund */
+    width: 100px; /* Sätt en fast bredd för alla skill-bars */
+    height: 20px; /* Höjden på fyllningsbaren */
+    position: relative; /* För att positionera skill-level korrekt inuti */
+    border: 1px solid #0b25e9;
+  }
+  
+  .skill-level {
+    background-color: #037e07; /* Grön färg för kunskapsnivå */
+    height: 100%; /* Fyller hela höjden av skill-bar */
+    position: absolute; /* Absolut position inuti skill-bar */
+    
+  }
+
+  
