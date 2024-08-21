@@ -20,6 +20,10 @@
     font-size: 1.5em;
 }
 
+.contact-uppgifter a {
+    text-decoration: none; 
+  }
+
 .contact-uppgifter h2 {
     color: aliceblue;
     font-size: 1.5em;
@@ -45,5 +49,19 @@
 }
 
 .contact-uppgifter a:hover {
-    color: lightgray; /* Lägg till den färg du föredrar för hover-effekten */
+    color: rgb(202, 198, 198); 
+    
 }
+
+  
+  .linkedin-logo {
+    height: 50px;
+    display: block;  
+    margin: auto;  
+  }
+  
+  .email-logo {  
+    height: 50px;
+    display: block;  
+    margin: auto;  
+  }
