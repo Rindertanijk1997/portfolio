@@ -7,85 +7,41 @@ function Skills() {
 
     <section className='skills_h1'>Skills</section>
 
-    <section className='skills_left'>
+
+
+    <section className='skills_right'>
     <ul>
   <li>
-    <div className="skill-icon">
-      <div className="skill-icon-inner"></div>
-    </div>
-    Arbeta agilt
-  </li>
-  <li>
-    <div className="skill-icon">
-      <div className="skill-icon-inner"></div>
-    </div>
-    Kan jobba både i team och själv
-  </li>
-  <li>
-    <div className="skill-icon">
-      <div className="skill-icon-inner"></div>
-    </div>
-    Bra tidsuppfattning
-  </li>
-  <li>
-    <div className="skill-icon">
-      <div className="skill-icon-inner"></div>
-    </div>
-    text
-  </li>
-  <li>
-    <div className="skill-icon">
-      <div className="skill-icon-inner"></div>
-    </div>
-    text
-  </li>
-  <li>
-    <div className="skill-icon">
-      <div className="skill-icon-inner"></div>
-    </div>
-    text
+  <div className="skill-bar">
+  <img src="src/assets/htmllogo.png" alt="HTML Skill" />
+</div>
+<li>
+  <div className="skill-bar">
+    <img src="src/assets/csslogo.png" alt="CSS Skill" />
+  </div>
+</li>
+<li>
+  <div className="skill-bar">
+    <img src="src/assets/uxuilogo.png" alt="UX/UI Skill" />
+  </div>
+</li>
+<li>
+  <div className="skill-bar">
+    <img src="src/assets/jslogo.png" alt="JavaScript Skill" />
+  </div>
+</li>
+<li>
+  <div className="skill-bar">
+    <img src="src/assets/reactlogo.png" alt="React Skill" />
+  </div>
+</li>
+<li>
+  <div className="skill-bar">
+    <img src="src/assets/nodelogo.png" alt="Node Skill" />
+  </div>
+</li>
   </li>
 </ul>
-    </section>
-    <section className='skills_right'>
-  <ul>
-    <li>
-      HTML
-      <div className="skill-bar">
-        <div className="skill-level" style={{width: '50%'}}></div>
-      </div>
-    </li>
-    <li>
-      CSS
-      <div className="skill-bar">
-        <div className="skill-level" style={{width: '40%'}}></div>
-      </div>
-    </li>
-    <li>
-      UX/UI
-      <div className="skill-bar">
-        <div className="skill-level" style={{width: '30%'}}></div>
-      </div>
-    </li>
-    <li>
-      JAVASCRIPT
-      <div className="skill-bar">
-        <div className="skill-level" style={{width: '30%'}}></div>
-      </div>
-    </li>
-    <li>
-      REACT
-      <div className="skill-bar">
-        <div className="skill-level" style={{width: '40%'}}></div>
-      </div>
-    </li>
-    <li>
-      NODE
-      <div className="skill-bar">
-        <div className="skill-level" style={{width: '35%'}}></div>
-      </div>
-    </li>
-  </ul>
 </section>
 
   </section>

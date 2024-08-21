@@ -20,41 +20,7 @@
     
   }
   
-  .skills_left {
-    max-width: 400px;
-    font-size: .9rem;
-    justify-self: center;
-    margin-bottom: 50px;
-   font-family: 'Bona Nova', serif;
-   font-weight: 600;
-   
-   
-   
-  }
-
-  .skill-icon {
-    width: 20px; /* Storleken på den yttre cirkeln */
-    height: 20px; /* Storleken på den yttre cirkeln */
-    background-color: #0b25e9; /* Ljusblå bakgrund */
-    border-radius: 50%; /* Gör det till en cirkel */
-    position: relative; /* För att positionera den inre cirkeln */
-    margin-right: 10px; /* Avstånd till texten */
-  }
-  
-  .skill-icon-inner {
-    width: 10px; /* Storleken på den inre cirkeln */
-    height: 10px; /* Storleken på den inre cirkeln */
-    background-color: #037e07; /* Grön färg */
-    border-radius: 50%; /* Gör det till en cirkel */
-    position: absolute; /* Absolut positionering inuti den yttre cirkeln */
-    top: 50%; /* Centrerar vertikalt */
-    left: 50%; /* Centrerar horisontellt */
-    transform: translate(-50%, -50%); /* Fint justerar positionen till centrum */
-  }
-
-
-
-  
+ 
   .skills_right {
     max-width: 400px;
     font-size: .9rem;
@@ -74,19 +40,13 @@
     font-size: 1.2rem;
   }
   
-  .skill-bar {
-    background-color: #0b25e9; /* Ljusblå bakgrund */
-    width: 100px; /* Sätt en fast bredd för alla skill-bars */
-    height: 20px; /* Höjden på fyllningsbaren */
-    position: relative; /* För att positionera skill-level korrekt inuti */
-    border: 1px solid #0b25e9;
+  .skill-bar img {
+    width: 100%;
+    background-color: rgb(0, 0, 16);
+      
   }
   
-  .skill-level {
-    background-color: #037e07; /* Grön färg för kunskapsnivå */
-    height: 100%; /* Fyller hela höjden av skill-bar */
-    position: absolute; /* Absolut position inuti skill-bar */
-    
-  }
+  
+
 
   
