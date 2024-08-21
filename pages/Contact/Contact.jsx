@@ -18,7 +18,7 @@ function Contact() {
 </section>
         <section className='contact-uppgifter-mail'>
         <a href="mailto:rindert.vandijk@hotmail.se?subject=Feedback från webbsidan&body=Hej, jag vill gärna komma i kontakt med dig angående...">
-  Skicka e-post till mig
+  Skicka mail till mig
   <img src="src/assets/epostlogo.png" alt="Epost Logo" class="email-logo" />
 </a>
         </section>

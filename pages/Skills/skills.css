@@ -1,52 +1,38 @@
-
 .skills {
     background-color: rgb(0, 0, 16); 
     color: aliceblue;
-    height: 90vh; 
-    width: 1280px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto 1fr; 
-    gap: 20px;
+    height: auto; /* Ändrat från 90vh till auto för att tillåta flexibel höjd beroende på innehåll */
+    width: 100%; /* Ändrat från 1280px till 100% för responsivitet */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding-top: 5rem;
-  }
-  
-  .skills_h1 {
-    grid-column: 1 / -1; 
-    justify-self: center; 
-    align-self: center; 
+}
+
+.skills_h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
-    
-  }
-  
- 
-  .skills_right {
-    max-width: 400px;
-    font-size: .9rem;
-    justify-self: center;
+}
+
+.skills_right {
+    width: 80%; /* Ökad bredd för att bättre passa karusellen */
+    max-width: 1200px; /* Ny maxbredd för större skärmar */
+    font-size: 0.9rem;
     margin-bottom: 50px;
-   font-family: 'Bona Nova', serif;
-   font-weight: 600;
-   
-  }
+    font-family: 'Bona Nova', serif;
+    font-weight: 600;
+}
 
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  li {
-    display: flex; /* Aktiverar flexbox */
-    align-items: center; /* Centrerar items vertikalt */
-    gap: 1.5rem; /* Lägger till 1 rem mellanrum mellan texten och baren */
-    margin-bottom: 3rem; /* Lägger till 1 rem mellanrum till nästa rad */
-    font-size: 1.2rem;
-  }
-  
-  .skill-bar img {
-    width: 100%;
+.skill-bar img {
+    width: auto; /* Justerar bredden proportionellt baserat på höjden */
+    height: 150px; /* En fast höjd för alla bilder */
     background-color: rgb(0, 0, 16);
-      
-  }
-  
-  
+}
 
-
-  
