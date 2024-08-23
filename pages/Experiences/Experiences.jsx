@@ -25,6 +25,7 @@ function Experience() {
     }
   ];
 
+  
   return (
     <section className="experience-list">
       <h1 className="experience-title">Erfarenheter</h1>

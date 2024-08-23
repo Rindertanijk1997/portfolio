@@ -17,6 +17,7 @@ function About() {
     }
   }, [inView]);
 
+  
   return (
     <section className='about'>
       <div className="grid-container">

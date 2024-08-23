@@ -24,7 +24,6 @@ function Contact() {
         </section>
       </section>
 
-
     </section>
   )
 }
