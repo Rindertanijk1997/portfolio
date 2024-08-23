@@ -7,19 +7,18 @@ import './skills.css';
 function Skills() {
   const settings = {
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
-    speed: 3000,
+    speed: 500, 
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0, // Sätter hastigheten till 0 för att skapa en kontinuerlig rullning
-    cssEase: 'linear' // Ger en konstant rörelse utan acceleration eller inbromsning
+    autoplay: false, 
+    cssEase: 'linear'
   };
 
   return (
     <section className='skills'>
-      <h1 className='skills_h1'>Skills</h1>
+      <h1 className='skills_h1'>Kompetens</h1>
       <section className='skills_right'>
         <Slider {...settings}>
           <div className="skill-bar">

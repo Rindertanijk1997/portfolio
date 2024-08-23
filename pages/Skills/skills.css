@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
+    
 }
 
 .skills_h1 {
@@ -34,5 +35,5 @@
     width: auto; /* Justerar bredden proportionellt baserat på höjden */
     height: 150px; /* En fast höjd för alla bilder */
     background-color: rgb(0, 0, 16);
+    
 }
-

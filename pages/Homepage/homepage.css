@@ -1,3 +1,12 @@
+@keyframes colorChange {
+    0%, 80% {
+      color: #FFFFFF; /* Vit */
+    }
+    20%, 60% {
+      color: #D4AF37; /* Guld */
+    }
+  }
+
 
 .Homepage {
    background-color: rgb(0, 0, 16); 
@@ -12,12 +21,13 @@
     justify-content: center;
     height: 100vh;
     color: aliceblue;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .Homepage_h1 {
     font-size: 6.5rem;
     margin: 0;
-   
+    animation: colorChange 10s infinite linear;
 }
 
 .Homepage_h2 {

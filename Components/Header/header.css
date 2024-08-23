@@ -31,9 +31,10 @@
     cursor: pointer;
     padding: 10px 20px;
     transition: color 0.3s;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
    
 }
 
 .header_link button:hover {
-    color: rgb(208, 206, 206);
+    color: #D4AF37;
 }
