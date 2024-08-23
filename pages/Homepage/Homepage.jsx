@@ -6,7 +6,7 @@ function Homepage() {
     const timer = setTimeout(() => {
       document.querySelector('.Homepage_h1').classList.add('active');
       console.log('active klassen tillagd');
-    }, 0); 
+    }, 0);
     return () => clearTimeout(timer);
   }, []);
 
