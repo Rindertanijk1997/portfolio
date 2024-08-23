@@ -1,19 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
-
-
-* {
-  box-sizing: border-box;
-}
-
 #root {
   max-width: 1280px;
-  margin: 0 auto; /* Centrerar #root inom viewporten om bredden är mindre än 1280px */
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: rgb(215, 215, 215);
   margin: 0;
+  padding: 0;
+
+
 }
