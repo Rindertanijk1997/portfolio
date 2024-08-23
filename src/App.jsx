@@ -1,28 +1,25 @@
-import { useState } from 'react'
-import './App.css'
-import About from '../pages/About/About'
-import Contact from '../pages/Contact/Contact'
-import Projects from '../pages/Project/Projects'
-import Skills from '../pages/Skills/Skills'
-import Homepage from '../pages/Homepage/Homepage'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import './App.css';
+import About from '../pages/About/About';
+import Contact from '../pages/Contact/Contact';
+import Experiences from '../pages/Experiences/Experiences'
+import Skills from '../pages/Skills/Skills';
+import Homepage from '../pages/Homepage/Homepage';
+import Header from '../Components/Header/Header';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <Router>
-      <>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
-      </>
-    </Router>
-  )
+    <div>
+    <Header />
+    <div id="home"><Homepage /></div>
+    <div id="about"><About /></div>
+    <div id="experiences"><Experiences /></div>
+    <div id="skills"><Skills /></div>
+    <div id="contact"><Contact /></div>
+  </div>
+  );
 }
 
-export default App
+export default App;
