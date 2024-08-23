@@ -1,13 +1,12 @@
 .skills {
-    background-color: rgb(0, 0, 16); 
+    background-color: rgb(0, 0, 16);
     color: aliceblue;
-    height: auto; /* Ändrat från 90vh till auto för att tillåta flexibel höjd beroende på innehåll */
-    width: 100%; /* Ändrat från 1280px till 100% för responsivitet */
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
-    
 }
 
 .skills_h1 {
@@ -17,23 +16,44 @@
 }
 
 .skills_right {
-    width: 80%; /* Ökad bredd för att bättre passa karusellen */
-    max-width: 1200px; /* Ny maxbredd för större skärmar */
-    font-size: 0.9rem;
-    margin-bottom: 50px;
-    font-family: 'Bona Nova', serif;
-    font-weight: 600;
-}
-
-.slick-slide {
+    perspective: 1500px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateX(30deg);
+}
+
+.skills_center {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.skill-bar {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    transition: transform 1s, opacity 0.5s;
+    transform-origin: 50% 200px;
+    transform-style: preserve-3d;
+    opacity: 1;
 }
 
 .skill-bar img {
-    width: auto; /* Justerar bredden proportionellt baserat på höjden */
-    height: 150px; /* En fast höjd för alla bilder */
-    background-color: rgb(0, 0, 16);
-    
+    width: auto; 
+    height: 150px;
+    object-fit: contain;
 }
