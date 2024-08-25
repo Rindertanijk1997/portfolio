@@ -51,8 +51,8 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: rgb(255, 255, 255); /* Ljus text för kontrast */
-    background-color: #363636; /* Mörkgrå som bakgrund */
+    color: rgb(0, 0, 16); /* Ljus text för kontrast */
+    background-color: #f8f8f8; /* Mörkgrå som bakgrund */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -62,7 +62,7 @@
 }
 
 .contact-uppgifter a:hover {
-    background-color: #3f3f3f; /* Ljusare grå när musen hovrar */
+    background-color: #fffed3; /* Ljusare grå när musen hovrar */
 }
 
 .linkedin-logo, .email-logo {
