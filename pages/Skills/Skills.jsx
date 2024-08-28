@@ -35,7 +35,7 @@ function Skills() {
         </div>
         {skills.map((skill, index) => (
           <div className="skill-bar" key={index} style={{
-            transform: `rotateY(${angle + index * (360 / skills.length)}deg) translateZ(300px)`,
+            transform: `rotateY(${angle + index * (360 / skills.length)}deg) translateZ(var(--translateZ, 300px))`,
             opacity: calculateOpacity(index)
           }}>
             <img src={skill.src} alt={skill.alt} />
@@ -46,5 +46,5 @@ function Skills() {
   );
 }
 
-
 export default Skills;
+

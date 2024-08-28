@@ -1,3 +1,7 @@
+:root {
+    --translateZ: 300px; /* Standardvärde för stora skärmar */
+  }
+
 .skills {
     background-color: rgb(0, 0, 16);
     color: aliceblue;
@@ -26,7 +30,7 @@
     justify-content: center;
     align-items: center;
     transform: rotateX(30deg);
-}
+  }
 
 .skills_center {
     position: absolute;
@@ -58,3 +62,42 @@
     height: 150px;
     object-fit: contain;
 }
+
+  
+  /* För mindre skärmar */
+  @media (max-width: 850px) {
+    :root {
+      --translateZ: 240px; /* Mindre radie på medium skärmar */
+    }
+    .skills_center img, .skill-bar img {
+        transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 700px) {
+    :root {
+      --translateZ: 180px; /* Ännu mindre radie på små skärmar */
+    }
+    .skills_center img, .skill-bar img {
+        transform: scale(0.7);
+    }
+  }
+  
+  @media (max-width: 570px) {
+    :root {
+      --translateZ: 150px; /* Minsta radien på de minsta skärmarna */
+    }
+    .skills_center img, .skill-bar img {
+        transform: scale(0.6);
+    }
+  }
+
+  @media (max-width: 450px) {
+    :root {
+      --translateZ: 115px; /* Minsta radien på de minsta skärmarna */
+    }
+    .skills_center img, .skill-bar img {
+        transform: scale(0.4);
+    }
+  }
+  

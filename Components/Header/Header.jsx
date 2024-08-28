@@ -1,23 +1,34 @@
-import './header.css'
+import React, { useState } from 'react';
+import './header.css';
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false); // Stänger menyn när man klickar på en länk
   };
 
   return (
-    <section className='header'>
-      <nav>
-        <ul className='header_link'>
-          <li><button onClick={() => scrollToSection("home")}>Home</button></li>
+    <>
+      <button className='hamburger' onClick={toggleMenu}>
+        {menuOpen ? '✕' : '☰'} {/* Byter ikon när menyn är öppen */}
+      </button>
+      <section id="mainHeader" className='header'>
+        <ul className={`header_link ${menuOpen ? 'active' : ''}`}>
+          <li><button onClick={() => scrollToSection("home")}>Start</button></li>
           <li><button onClick={() => scrollToSection("about")}>Om mig</button></li>
           <li><button onClick={() => scrollToSection("experiences")}>Erfarenheter</button></li>
           <li><button onClick={() => scrollToSection("skills")}>Kompetenser</button></li>
           <li><button onClick={() => scrollToSection("contact")}>Kontakt</button></li>
         </ul>
-      </nav>
-    </section>
-  )
+        </section>
+    </>
+  );
 }
 
 export default Header;
