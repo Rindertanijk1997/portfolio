@@ -1,0 +1,78 @@
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    background-color: rgb(0, 0, 16);
+}
+
+.contact-h1{
+    color: aliceblue;
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.contact-uppgifter {
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+.contact-uppgifter h2 {
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+.contact-uppgifter h2, .contact-uppgifter p, .contact-uppgifter a {
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+.contact-uppgifter-telefon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-uppgifter-telefon p {
+    margin-left: 1rem;
+}
+
+.contact-uppgifter-linkedin {
+    margin-bottom: 1.5rem;
+}
+
+.contact-uppgifter a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(0, 0, 16); /* Ljus text för kontrast */
+    background-color: #f8f8f8; /* Mörkgrå som bakgrund */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px #D4AF37; 
+    
+}
+
+.contact-uppgifter a:hover {
+    background-color: #fffed3; /* Ljusare grå när musen hovrar */
+}
+
+.linkedin-logo, .email-logo {
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .contact-uppgifter {
+        color: aliceblue;
+        font-size: 1.2em;
+    }
+}
